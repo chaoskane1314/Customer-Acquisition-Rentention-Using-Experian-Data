@@ -45,7 +45,7 @@ Another two example: column "video gamer" and "dog owner".
 <img src="image/video gamer.png">
 <img src="image/ dog owners.png">
 
-From the above two plot, both group actually has similar shape of distrubutio.<br>
+From the above two plot, both group actually has similar shape of distrubution.<br>
 However, for "video gamer" column, the mean is far more apart then the "dog owners" column.
 
 ### Correlation between numerical variable.
