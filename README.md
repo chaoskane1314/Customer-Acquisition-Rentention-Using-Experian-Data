@@ -71,7 +71,7 @@ We can use the same technique to examine other pairs with high correlation as we
 
 ## Hypothesis Testing
 
-Since the goal is to find out if there is really a difference between the score of Active group and Cancel group. I will be doing a  significance test on the differnce of mean value. I will perform the test on two column here, but it can apply to all. Since the sample size is really large in this data,8700 for the active group and 8596 for the cancel group. I will use z-test instead of t-test since there will be nearly no differnce in the result.
+Since the goal is to find out if there is really a difference between the score of Active group and Cancel group. I will be doing a  significance test on the difference of mean value. I will perform the test on two column here, but it can apply to all. Since the sample size is really large in this data,8700 for the active group and 8596 for the cancel group. I will use z-test instead of t-test since there will be nearly no difference in the result.
 
 <p align="center">
 <img src="image/null and alt.png">
