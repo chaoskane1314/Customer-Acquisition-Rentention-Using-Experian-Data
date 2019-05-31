@@ -125,3 +125,8 @@ Since this is a square root of the data, the range will be from 1 to 10 (Origina
 
 A confidence interval like this mean:
 - At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
+
+## Future Work
+- Split into subgroups depend on type of subscription.
+- Examine all data provide by Experian.
+- Create a prediction model.
