@@ -91,10 +91,12 @@ I will also set the alpha for the z-test to be 0.02.
 The two column to perform the test below will be the "wine lover" and "dog owners" columns
 
 For "wine lover" column, we first look at the shape of data. We observe from the graph, it's highly positive skew, I will perform a square root transformation on the data, the result will display below.<BR>
-Before
+<p align="center">
+#### Before:
 <img src="image/ wine lovers.png">
-After
+#### After:
 <img src="image/data transform.png">
+</p>
 
 The shape of the data looks symmetric after the transformation, so we can approximate the data with a normal distribution.
 
@@ -102,7 +104,7 @@ Using the Z-Test to see if mean score of wine lover score differ between the Act
 
 Result of z = -12.196, p-value = 0.0000
 
-Conclusion, at alpha=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
+- Conclusion, at alpha=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
 
 Apply the same treatment for the dog owner column.
 <BR>
@@ -110,7 +112,7 @@ Since the distribution of the data is already symmetric, transformation of data 
 
 For the dog owner column, we get a result of z = 1.132, p-value = 01288.
 
-At alpha=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
+- At alpha=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
 
 ### Confidence interval
 In the above significance test, we conclude there is a likely a difference in mean wine lover score between the two group. <BR>
@@ -122,4 +124,4 @@ Creating a 95% Confidence Interval for the "wine lover" column yields: (-0.5099,
 Since this is a square root of the data, the range will be from 1 to 10 (Original numerical column is 1 to 99)
 
 A confidence interval like this mean:
-At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
+- At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
