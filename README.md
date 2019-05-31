@@ -81,7 +81,7 @@ The alpha for the z-test will be 0.02.
 
 The two column to perform the test below will be the "wine lover" and "dog owners" columns
 
-For "wine lover" column, looking at the shape of distribution,a highly positive skew is obeserved, I will perform a square root transformation on the data, the result will display below.<BR>
+For "wine lover" column, looking at the shape of distribution,a highly positive skew is observed, I will perform a square root transformation on the data, the result will display below.<BR>
 <p align="center">
 Before:
 <img src="image/ wine lovers.png">
