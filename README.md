@@ -60,13 +60,13 @@ I want to see if there is any correlation between the data column. So in the fut
 
 To do so, I create a correlation heat map to identify these relationship.
 
-<img src="image/corr heatmap.png">
+<img align="center" src="image/corr heatmap.png">
 
 Looking at the correlation heatmap above, we can definitely see some variable with strong correlation.
 
 For example, the "medical policy" and "life insurance policy" has a correlation of 0.91. Creating a scatter plot below.
 
-<img src="image/sample scatter.png">
+<img align="center" src="image/sample scatter.png">
 
 From the above scatterplot, we can see taht as one variable increase, the other tend to increase as well.
 <BR>
