@@ -1,6 +1,7 @@
 # Customer-Acquisition-Rentention-Using-Experian-Data
 ### Kane Ren
 <img src="image/experian.png">
+
 ### Background and the Data
 
 Business can purchase data from Experian to get more insight about their customers.
@@ -20,6 +21,7 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 ## Data Preview and Cleaning
 <img src="image/data structure.png">
+
 - The Data contain 20000 rows.
 - For the Categorical Data, from "american express/premium" to "person 1: health being", most of the column has 15745 rows of non-null data.
 - For the numerical data, from "act/int wine lovers" and beyond, most has 17052 non-null data.
