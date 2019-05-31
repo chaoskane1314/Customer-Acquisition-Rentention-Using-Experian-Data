@@ -20,7 +20,9 @@ To find out if there is difference between customers that are still subscribing(
 E.g.: if the "Active customers" had a significant higher or lower "Play Golf Value" than the "Cancel customers". Then this information can be use to target better customers, result in higher conversion on new customer acquisition or better retention on existing customers.
 
 ## Data Preview and Cleaning
-<img src="image/data structure.png">
+<p align="center">
+<img width="300" height="300" src="image/data structure.png">
+</p>
 
 - The Data contain 20000 rows.
 - For the Categorical Data, from "american express/premium" to "person 1: health being", most of the column has 15745 rows of non-null data.
@@ -80,17 +82,18 @@ We can use the same technique to examine other pairs with high correlation as we
 
 Since the goal is to find out if there is really a difference between the mean score of Active group and Cancel group. A significance test is needed to get the answer. I will perform the test on two column here, but it can apply to all. Since the sample size is really large in this data,8700 for the active group and 8596 for the cancel group. I will just use Z-test since there will be nearly no differnce in the result.
 
-The null and alternative hypothesis is:
-
-$$ H_0: \mu_\text{Active} =  \mu_\text{Cancel} $$
-$$ H_A: \mu_\text{Active} \neq  \mu_\text{Cancel} $$
+<p align="center">
+<img src="image/null and alt.png">
+</p>
 
 I will also set the alpha for the z-test to be 0.02.
 
 The two column to perform the test below will be the "wine lover" and "dog owners" columns
 
-For "wine lover" column, we first look at the shape of data. We observe from graph previously, it's highly positive skew, I will perform a square root transformation on the data, the result will display below.
-
+For "wine lover" column, we first look at the shape of data. We observe from the graph, it's highly positive skew, I will perform a square root transformation on the data, the result will display below.<BR>
+Before
+<img src="image/ wine lovers.png">
+After
 <img src="image/data transform.png">
 
 The shape of the data looks symmetric after the transformation, so we can approximate the data with a normal distribution.
@@ -99,7 +102,7 @@ Using the Z-Test to see if mean score of wine lover score differ between the Act
 
 Result of z = -12.196, p-value = 0.0000
 
-Coclusion, at alpha=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
+Conclusion, at alpha=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
 
 Apply the same treatment for the dog owner column.
 <BR>
