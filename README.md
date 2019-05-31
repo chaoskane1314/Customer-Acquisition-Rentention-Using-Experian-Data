@@ -92,9 +92,9 @@ The two column to perform the test below will be the "wine lover" and "dog owner
 
 For "wine lover" column, we first look at the shape of data. We observe from the graph, it's highly positive skew, I will perform a square root transformation on the data, the result will display below.<BR>
 <p align="center">
-#### Before:
+Before:
 <img src="image/ wine lovers.png">
-#### After:
+After:
 <img src="image/data transform.png">
 </p>
 
