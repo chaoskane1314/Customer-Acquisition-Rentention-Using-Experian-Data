@@ -21,20 +21,20 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 ## Data and Cleaning
 - The Data contain 20000 rows.
-- For the Categorical Dat, most of the column has 15745 rows of non-null data.
-- For the numerical data,  most has 17052 non-null data.
+- For the categorical data, most column has 15745 rows of non-null data.
+- For the numerical data,  most column has 17052 non-null data.
 - a heatmap of missing data is shown below:
 
 <img src="image/missing data.png">
 
-When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
+When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to split the data into two group, drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
 
 For this project, I will be only working on the numerical columns.
 
 ### Exploratory Data Analysis(EDA)
-I will be plotting the distribution of both group on the same graph to see the the difference between the active group and cancel grou.
+I will be plotting the distribution of both active gorup and cacnel groupo on the same graph to see the the difference between the two.
 
-By looking at the plot below,a better idea how the distribution of one column of numerical data looks like for each of the group. Knowing what the is the shape, where the mean it is, and a general idea of the difference.
+By looking at the plot below, a better idea how the distribution for one column of numerical data looks like for each of the group. It will privde information on what the is the shape, where the mean it is, and a general idea of the difference.
 
 <img src="image/ wine lovers.png">
 
