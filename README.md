@@ -76,7 +76,7 @@ From the above scatterplot, we can see taht as one variable increase, the other 
 <BR>
 This make sense, since both insurance usually come together.
 
-We can use the same technique to examine other pairs with high correlation as well. By doing so, it might lead to elimination of collinearity for a better model building in the future.
+We can use the same technique to examine other pairs with high correlation as well. By doing so, it might reduce the effect of collinearity for a better model fit in the future.
 
 ## Hypothesis Testing
 
@@ -117,7 +117,7 @@ For the dog owner column, we get a result of z = 1.132, p-value = 01288.
 ### Confidence interval
 In the above significance test, we conclude there is a likely a difference in mean wine lover score between the two group. <BR>
 
-But in order to convince other to take action on it, it is better to provide a confidence interval, the confidence interval provide more context on how much actually the difference is.
+But most of the time it is better to provide a confidence interval, the confidence interval provide more context on how much actually the difference is.
 
 Creating a 95% Confidence Interval for the "wine lover" column yields: (-0.5099, -0.3687)
 
