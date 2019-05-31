@@ -19,78 +19,69 @@ To find out if there is difference between customers that are still subscribing(
 
 E.g.: if the "Active customers" had a significant higher or lower "Play Golf Value" than the "Cancel customers". Then this information can be use to target better customers, result in higher conversion on new customer acquisition or better retention on existing customers.
 
-## Data Preview and Cleaning
-<p align="center">
-<img width="300" height="300" src="image/data structure.png">
-</p>
-
+## Data and Cleaning
 - The Data contain 20000 rows.
-- For the Categorical Data, from "american express/premium" to "person 1: health being", most of the column has 15745 rows of non-null data.
-- For the numerical data, from "act/int wine lovers" and beyond, most has 17052 non-null data.
-- a heatmap of missing data is create below to see it in a graphic way.
+- For the categorical data, most column has 15745 rows of non-null data.
+- For the numerical data,  most column has 17052 non-null data.
+- a heatmap of missing data is shown below:
 
 <img src="image/missing data.png">
 
-The heatmap reinforce the difference between missing data for the categorical and numerical data.
-
-When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
-
-Since there is a difference between the Categorical and Numerical columns. Before I drop the value,I split the data into two data set. Both will keep the "Sub Type" and "Sub Status Column
-  - The result categorical data set will have 15745 row, and the numerical dataset will have 17296 row.
+When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to split the data respectively, drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
 
 For this project, I will be only working on the numerical columns.
 
 ### Exploratory Data Analysis(EDA)
-Since I want to check the difference between the active group and cancel group, I will be plotting the distribution of both group on the same graph.
+I will be plotting the distribution of both active gorup and cacnel groupo on the same graph to see the the difference between the two.
 
-By looking at the plot below, we can get a better idea how the distribution of one column of numerical data looks like for each of the group. Knowing where the mean it is, and get a general idea of the difference.
+By looking at the plot below, a better idea how the distribution for one column of numerical data looks like for each of the group. It will privde information on what the is the shape, where the mean it is, and a general idea of the difference.
 
 <img src="image/ wine lovers.png">
 
-We can see that for the "wine lovers" column, both group has a positive skew distribution, with mode around 10, and the mean is 34.5 for the active user group, 39.55 for the cancel group.
+For the "wine lovers" column, both group has a positive skew distribution, with mode around 10, and the mean is 34.5 for the active user group, 39.55 for the cancel group.
 
 Another two example: column "video gamer" and "dog owner".
 
 <img src="image/video gamer.png">
 <img src="image/ dog owners.png">
 
-From the above two plot, we can see both group actually has similar distrubution shape.<br>
+From the above two plot, both group actually has similar shape of distrubutio.<br>
 However, for "video gamer" column, the mean is far more apart then the "dog owners" column.
 
 ### Correlation between numerical variable.
-I want to see if there is any correlation between the data column. So in the future, if a model is need to be build upon the data, I might able to identify some collinearity relationship here.
+Check to see if there is any correlation between the data column. By doing this, if a model is need to be build upon the data, some collinearity relationship can be spot here.
 
-To do so, I create a correlation heat map to identify these relationship.
+To do so, a correlation heat map is created to identify these relationship.
 
 <img align="center" src="image/corr heatmap.png">
 
 Looking at the correlation heatmap above, we can definitely see some variable with strong correlation.
 
-For example, the "medical policy" and "life insurance policy" has a correlation of 0.91. Creating a scatter plot below.
+For example, the "medical policy" and "life insurance policy" has a correlation of 0.91. Its scatter plot shown below:
 
 <p align="center">
 <img src="image/sample scatter.png">
 </p>
 
-From the above scatterplot, we can see taht as one variable increase, the other tend to increase as well.
+From the above scatterplot, we can see a strong pattern. As one variable increase, the other tend to increase as well.
 <BR>
-This make sense, since both insurance usually come together.
+This make sense, since both mdeical and life insurance usually come together.
 
-We can use the same technique to examine other pairs with high correlation as well. By doing so, it might reduce the effect of collinearity for a better model fit in the future.
+We can use the same technique to examine other pairs with high correlation as well. This might reduce the effect of collinearity for a better model fit in the future.
 
 ## Hypothesis Testing
 
-Since the goal is to find out if there is really a difference between the mean score of Active group and Cancel group. A significance test is needed to get the answer. I will perform the test on two column here, but it can apply to all. Since the sample size is really large in this data,8700 for the active group and 8596 for the cancel group. I will just use Z-test since there will be nearly no differnce in the result.
+Since the goal is to find out if there is really a difference between the score of Active group and Cancel group. I will be doing a  significance test on the difference of mean value. I will perform the test on two column here, but it can apply to all. Since the sample size is really large in this data,8700 for the active group and 8596 for the cancel group. I will use z-test instead of t-test since there will be nearly no difference in the result.
 
 <p align="center">
 <img src="image/null and alt.png">
 </p>
 
-I will also set the alpha for the z-test to be 0.02.
+The alpha for the z-test will be 0.02.
 
 The two column to perform the test below will be the "wine lover" and "dog owners" columns
 
-For "wine lover" column, we first look at the shape of data. We observe from the graph, it's highly positive skew, I will perform a square root transformation on the data, the result will display below.<BR>
+For "wine lover" column, looking at the shape of distribution,a highly positive skew is obeserved, I will perform a square root transformation on the data, the result will display below.<BR>
 <p align="center">
 Before:
 <img src="image/ wine lovers.png">
@@ -98,9 +89,9 @@ After:
 <img src="image/data transform.png">
 </p>
 
-The shape of the data looks symmetric after the transformation, so we can approximate the data with a normal distribution.
+The shape of the data really close to symmetric after the transformation, so we can approximate the data with a normal distribution.
 
-Using the Z-Test to see if mean score of wine lover score differ between the Active and Cancel user group yields:
+Using the z-test to see if mean score of wine lover score differ between the Active and Cancel group yields:
 
 Result of z = -12.196, p-value = 0.0000
 
@@ -110,12 +101,12 @@ Apply the same treatment for the dog owner column.
 <BR>
 Since the distribution of the data is already symmetric, transformation of data is not needed.
 
-For the dog owner column, we get a result of z = 1.132, p-value = 01288.
+For the dog owner column, we get a result of z = 1.132, p-value = 0.1288.
 
 - At alpha=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
 
 ### Confidence interval
-In the above significance test, we conclude there is a likely a difference in mean wine lover score between the two group. <BR>
+In the above significance test, we conclude there is a high possibility of difference in mean wine lover score between the two group. <BR>
 
 But most of the time it is better to provide a confidence interval, the confidence interval provide more context on how much actually the difference is.
 
@@ -123,8 +114,8 @@ Creating a 95% Confidence Interval for the "wine lover" column yields: (-0.5099,
 
 Since this is a square root of the data, the range will be from 1 to 10 (Original numerical column is 1 to 99)
 
-A confidence interval like this mean:
-- At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
+Interpretation of this confidence interval:
+- At a scale of 10, we are 95% confidence that the true mean difference of wine lover value between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the value, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
 
 ## Future Work
 - Split into subgroups depend on type of subscription.
