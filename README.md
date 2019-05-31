@@ -27,7 +27,7 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 <img src="image/missing data.png">
 
-When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to split the data into two group, drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
+When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to split the data respectively, drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
 
 For this project, I will be only working on the numerical columns.
 
