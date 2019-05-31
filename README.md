@@ -66,7 +66,9 @@ Looking at the correlation heatmap above, we can definitely see some variable wi
 
 For example, the "medical policy" and "life insurance policy" has a correlation of 0.91. Creating a scatter plot below.
 
-<img align="center" src="image/sample scatter.png">
+<p align="center">
+<img src="image/sample scatter.png">
+</p>
 
 From the above scatterplot, we can see taht as one variable increase, the other tend to increase as well.
 <BR>
