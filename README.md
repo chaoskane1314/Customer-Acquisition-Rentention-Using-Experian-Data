@@ -21,7 +21,7 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 ## Data Preview and Cleaning
 <p align="center">
-<img width="300" height="300" src="image/data structure.png">
+<img width="500" height="300" src="image/data structure.png">
 </p>
 
 - The Data contain 20000 rows.
