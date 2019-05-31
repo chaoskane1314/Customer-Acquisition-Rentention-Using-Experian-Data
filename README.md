@@ -31,35 +31,34 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 The heatmap reinforce the difference between missing data for the categorical and numerical data.
 
-When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to drop all the missing value since it doesn't contribute anything to my analysis.
+When a data is missing in the categorical or numerical, the whole row of data seems to missing as well. I decide to drop all the missing value because a whole row of missing value doesn't contribute anything to my analysis.
 
 Since there is a difference between the Categorical and Numerical columns. Before I drop the value,I split the data into two data set. Both will keep the "Sub Type" and "Sub Status Column
   - The result categorical data set will have 15745 row, and the numerical dataset will have 17296 row.
 
-For this project, I will be only working on the numerical columns for now.
+For this project, I will be only working on the numerical columns.
 
 ### Exploratory Data Analysis(EDA)
-Since I want to see the difference between the active group and cancel group, I will be plotting their distribution of both group on the same graph.
+Since I want to check the difference between the active group and cancel group, I will be plotting the distribution of both group on the same graph.
 
-By looking at the plot below, we can get a better idea how the distribution of one column of numerical data looks like for each of the user group. Knowing where the mean it is, and get a general idea of the difference.
+By looking at the plot below, we can get a better idea how the distribution of one column of numerical data looks like for each of the group. Knowing where the mean it is, and get a general idea of the difference.
 
 <img src="image/ wine lovers.png">
 
-We can see that for the "wine lovers" column, both user group had a positive skew distribution, with mode around 10, and the mean is 34.5 for the active user group, 39.55 for the cancel group.
+We can see that for the "wine lovers" column, both group has a positive skew distribution, with mode around 10, and the mean is 34.5 for the active user group, 39.55 for the cancel group.
 
-Another two example:column "video gamer", and "dog owner" .
+Another two example: column "video gamer" and "dog owner".
 
 <img src="image/video gamer.png">
 <img src="image/ dog owners.png">
 
-From the above images, we can see both user group actually has pretty similar distrubution shape.
-
+From the above two plot, we can see both group actually has pretty similar distrubution shape.<br>
 However, for "video gamer" column, the mean is far more apart then the "dog owners" column.
 
 ### Correlation between numerical variable.
-I want to see if there is any correlation between the datas. In the future, if a model is need to be build upon the data, we might able to identify some collinearity relationship here.
+I want to see if there is any correlation between the data column. So in the future, if a model is need to be build upon the data, I might able to identify some collinearity relationship here.
 
-To do so, I decide to create a correlation heat map to identify these relationship.
+To do so, I create a correlation heat map to identify these relationship.
 
 <img src="image/corr heatmap.png">
 
@@ -69,13 +68,11 @@ For example, the "medical policy" and "life insurance policy" has a correlation 
 
 <img src="image/sample scatter.png">
 
-From the above scatterplot, we can see the strong postive correlation.
-<BR>
-As one variable increase, the other tend to increase as well.
+From the above scatterplot, we can see taht as one variable increase, the other tend to increase as well.
 <BR>
 This make sense, since both insurance usually come together.
 
-We can use the same technique to examine other pairs with high correlation as well. By doing so, we might able to eliminate collinearity when building a model in the future.
+We can use the same technique to examine other pairs with high correlation as well. By doing so, it might lead to elimination of collinearity for a better model building in the future.
 
 ## Hypothesis Testing
 
