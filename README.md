@@ -32,9 +32,9 @@ When a data is missing in the categorical or numerical, the whole row of data se
 For this project, I will be only working on the numerical columns.
 
 ### Exploratory Data Analysis(EDA)
-I will be plotting the distribution of both active gorup and cacnel groupo on the same graph to see the the difference between the two.
+I will be plotting the distribution of both active group and cacel group on the same graph to see the the difference between the two.
 
-By looking at the plot below, a better idea how the distribution for one column of numerical data looks like for each of the group. It will privde information on what the is the shape, where the mean it is, and a general idea of the difference.
+By looking at the plot below, a better idea how the distribution for one column of numerical data looks like for each of the group. It will proivde information on what the is the shape, where the mean it is, and a general idea of the difference.
 
 <img src="image/ wine lovers.png">
 
@@ -45,7 +45,7 @@ Another two example: column "video gamer" and "dog owner".
 <img src="image/video gamer.png">
 <img src="image/ dog owners.png">
 
-From the above two plot, both group actually has similar shape of distrubution.<br>
+From the above two plot, both group actually has similar shape of distribution.<br>
 However, for "video gamer" column, the mean is far more apart then the "dog owners" column.
 
 ### Correlation between numerical variable.
@@ -65,7 +65,7 @@ For example, the "medical policy" and "life insurance policy" has a correlation 
 
 From the above scatterplot, we can see a strong pattern. As one variable increase, the other tend to increase as well.
 <BR>
-This make sense, since both mdeical and life insurance usually come together.
+This make sense, since both medical and life insurance usually come together.
 
 We can use the same technique to examine other pairs with high correlation as well. This might reduce the effect of collinearity for a better model fit in the future.
 
