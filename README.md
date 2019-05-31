@@ -1,7 +1,8 @@
 # Customer-Acquisition-Rentention-Using-Experian-Data
 ### Kane Ren
 <img src="image/experian.png">
-### Backgoround and the Data
+### Background and the Data
+
 Business can purchase data from Experian to get more insight about their customers.
 <br>
 By sending customer information to Experian and pay a fee. It will return back data for the customer in many area.
@@ -19,7 +20,7 @@ E.g.: if the "Active customers" had a significant higher or lower "Play Golf Val
 
 ## Data Preview and Cleaning
 <img src="image/data structure.png">
-- The Data contain 20000 rows
+- The Data contain 20000 rows.
 - For the Categorical Data, from "american express/premium" to "person 1: health being", most of the column has 15745 rows of non-null data.
 - For the numerical data, from "act/int wine lovers" and beyond, most has 17052 non-null data.
 - a heatmap of missing data is create below to see it in a graphic way.
@@ -110,4 +111,11 @@ At $\alpha$=0.02, a p-value of 0.1288 means we fail to reject the null hypothesi
 ### Confidence interval
 In the above significance test, we conclude there is a likely a difference in mean wine lover score between the two group. <BR>
 
-But in order to convince other member in the company to take action on it, it is better to provide a confidence interval, the confidence interval provide more context on how much is the difference.
+But in order to convince other to take action on it, it is better to provide a confidence interval, the confidence interval provide more context on how much actually the difference is.
+
+Since this is a square root of the data, the range will be from 1 to 10.
+
+Creating a 95% Confidence Interval for the "wine lover" column yields: (-0.5099, -0.3687)
+
+A confidence interval like this mean:
+At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
