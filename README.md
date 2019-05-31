@@ -6,9 +6,9 @@
 
 Business can purchase data from Experian to get more insight about their customers.
 <br>
-By sending customer information to Experian and pay a fee. It will return back data for the customer in many area.
+By sending customer information to Experian and pay a fee. It will return back data of the customer in many area, such as their hobby, interest, etc.
 
-So my final data contain customers' subscription status and the customer's data from Experian.
+My final data contain customers' subscription status and the customer's data from Experian.
 <br>
 Subscription Status is base on after a free trial subscription.
 <br>
@@ -52,7 +52,7 @@ Another two example: column "video gamer" and "dog owner".
 <img src="image/video gamer.png">
 <img src="image/ dog owners.png">
 
-From the above two plot, we can see both group actually has pretty similar distrubution shape.<br>
+From the above two plot, we can see both group actually has similar distrubution shape.<br>
 However, for "video gamer" column, the mean is far more apart then the "dog owners" column.
 
 ### Correlation between numerical variable.
@@ -83,7 +83,7 @@ The null and alternative hypothesis is:
 $$ H_0: \mu_\text{Active} =  \mu_\text{Cancel} $$
 $$ H_A: \mu_\text{Active} \neq  \mu_\text{Cancel} $$
 
-I will also set the alpha for the Z-test to be 0.02.
+I will also set the alpha for the z-test to be 0.02.
 
 The two column to perform the test below will be the "wine lover" and "dog owners" columns
 
@@ -95,26 +95,26 @@ The shape of the data looks symmetric after the transformation, so we can approx
 
 Using the Z-Test to see if mean score of wine lover score differ between the Active and Cancel user group yields:
 
-We get a result of Z = -12.196, p-value = 0.000
+Result of z = -12.196, p-value = 0.0000
 
-At $\alpha$=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
+Coclusion, at alpha=0.02, a p-value of 0.0000 means we reject the null hypothesis test, it's really likely there is a difference between the mean wine lover score between the active group and cancel group.
 
 Apply the same treatment for the dog owner column.
 <BR>
 Since the distribution of the data is already symmetric, transformation of data is not needed.
 
-For the dog owner column, we get a result of Z = 1.132, p-value = 01288.
+For the dog owner column, we get a result of z = 1.132, p-value = 01288.
 
-At $\alpha$=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
+At alpha=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
 
 ### Confidence interval
 In the above significance test, we conclude there is a likely a difference in mean wine lover score between the two group. <BR>
 
 But in order to convince other to take action on it, it is better to provide a confidence interval, the confidence interval provide more context on how much actually the difference is.
 
-Since this is a square root of the data, the range will be from 1 to 10.
-
 Creating a 95% Confidence Interval for the "wine lover" column yields: (-0.5099, -0.3687)
+
+Since this is a square root of the data, the range will be from 1 to 10 (Original numerical column is 1 to 99)
 
 A confidence interval like this mean:
 At a scale of 10, we are 95% confidence that the true mean difference between the active group and cancel group is between (-0.5099, -0.3687). In context, the lower the score, the more likely the person is a "Wine Lover", so the active group is more likely to be a wine person.
