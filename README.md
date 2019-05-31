@@ -103,6 +103,8 @@ Since the distribution of the data is already symmetric, transformation of data 
 
 For the dog owner column, we get a result of z = 1.132, p-value = 0.1288.
 
+<img src="image/test.png">
+
 - At alpha=0.02, a p-value of 0.1288 means we fail to reject the null hypothesis test, we can't say there is a difference between the mean dog owner score between the active and cancel group.
 
 ### Confidence interval
